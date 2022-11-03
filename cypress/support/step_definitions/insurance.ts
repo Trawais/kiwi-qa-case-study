@@ -25,6 +25,14 @@ When('I click Travel Basic insurance', () => {
   cy.get('input[value="basic"]').click({ force: true });
 });
 
+When('I open Comparision and terms pop-up window', () => {
+  cy.get('a[data-test="ReservationPassengerInsurance-head-infoButton"]').click();
+});
+
+When('I add Travel Plus insurance', () => {
+  cy.get('div.CommonInsurance button[data-test="plus-modalButton"]').first().click();
+});
+
 Then('I can see text {string}', (text: string) => {
   cy.contains(text);
 });

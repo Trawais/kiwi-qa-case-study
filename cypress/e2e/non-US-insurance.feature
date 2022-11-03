@@ -19,3 +19,23 @@ Feature: non-US nationality Insurance
     When I select "Czech Republic" nationality
     When I click No insurance
     Then I am still able to continue with the booking
+
+  Scenario: 'Travel Plus' insurance can be added via Comparision pop-up window
+    When I select "Czech Republic" nationality
+    When I open Comparision and terms pop-up window
+    When I add Travel Plus insurance
+    Then I can see text "Travel Plus successfully added"
+
+  @skip
+  Scenario: 'Travel Basic' insurance can be added via Comparision pop-up window
+    When I select "Czech Republic" nationality
+    When I open Comparision and terms pop-up window
+    When I add Travel Basic insurance
+    Then I can see text "Travel Basic successfully added"
+
+  @skip
+  Scenario: No insurance is added when Comparision pop-up window is opened and closed
+    When I select "Czech Republic" nationality
+    When I open Comparision and terms pop-up window
+    When I close Comparison and terms pop-up window
+    Then I can see no insurance is added

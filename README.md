@@ -18,3 +18,7 @@ Project has been tested on these versions of node.js and npm
 I believe the main purpose of this task was to show I'm able to prepare working solution and not all Scenarios must be automated.
 Also I believe I could think of much more Scenarios if I have full documentation and more time.
 I take this as a task for a few hours and I adjusted scope to this fact.
+
+## ToDo list
+1. Add at least some JSDoc documentation somewhere
+2. Add example of Page Object Pattern if there is some extra time
