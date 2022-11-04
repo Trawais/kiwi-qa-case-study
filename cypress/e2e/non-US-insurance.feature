@@ -39,3 +39,10 @@ Feature: non-US nationality Insurance
     When I open Comparision and terms pop-up window
     When I close Comparison and terms pop-up window
     Then I can see no insurance is added
+
+  Scenario: Insurance is properly reflected on next page calculation
+    When I select "Czech Republic" nationality
+    When I fill in customer data
+    When I click Travel Basic insurance
+    When I continue to Ticket fare page
+    Then I see insurance is reflected in the price calculation
