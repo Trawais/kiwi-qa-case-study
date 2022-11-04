@@ -18,13 +18,13 @@ Project has been tested on these versions of node.js and npm which are also cons
 2. Run tests: `npm run cy:run`
 
 ## Why are some Scenarios skipped?
-I believe the main purpose of this task was to show I'm able to prepare working solution and not all Scenarios must be automated.
+I believe the main purpose of this task was to show tha I'm able to prepare working solution and not all Scenarios must be automated.
 Also I believe I could think of much more Scenarios if I have full documentation and more time.
 I take this as a task for a few hours and I adjusted scope to this fact.
 
 ## How to debug / develop?
 You can open cypress by command `npm run cy:open`.
-Note: You can run only one scenario from the feature file by providing `@only` tag and save some time.
+Note: You can run only one scenario from the feature file by providing `@only` tag just before that Scenario and save a lot of time.
 
 ## ToDo list
 1. Pass baseUrls for frontend and API services via environment variables
@@ -43,7 +43,9 @@ I've spent about 6 hours in total (2 evenings for about 3 hours each) on it.
 The main complication has been during the set-up phase in the very beginning,
 because there is no sandbox prepared on the internet for the Cypres, Cucubmer and typescript combination.
 Well actually there are somes, but none of them has been prepared for the latest (10.*) cypress.
-Also there is a error in the example code for the cucumber preprocessor plugin configuration what took me some time to find.
+So I must combine multiple manuals and prepare it by myself.
+Which was I guess wanted at the end.
+Also there is an error in the example code for the cucumber preprocessor plugin configuration what took me some time to find.
 
 I cannot wait to discuss all topics about what I've done wrong and what can be done better.
 I believe there will be plenty of such things, because Cypress has never been my primar testing framework.

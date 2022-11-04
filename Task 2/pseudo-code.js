@@ -1,5 +1,5 @@
 describe("Kiwi page check - desktop", () => {
-  before(() => { // This runs only once for all it() tests block down there
+  before(() => { // This runs only once for all it() test blocks down there
     cy.visit("https://kiwi.com/en/")
     cy.log("Accept cookies") // You can probably use some better logical abstraction, so such commands are not necessary to do
     cy.contains("Accept").click() // I would not rely on visible text for the customer; it's valid only for one localization
