@@ -29,11 +29,13 @@ Note: You can run only one scenario from the feature file by providing `@only` t
 ## ToDo list
 1. Pass baseUrls for frontend and API services via environment variables
 2. Prepare docker image with correct node.js and npm versions for the CI/CD run
-3. Add Cucumber HTML report
-4. Implement step 'I fill random customer data' with help of faker library and custom command
-5. Add example of Page Object Pattern if there is some extra time
-6. Add at least some JSDoc documentation somewhere
-7. Introduce code-style check
+3. Run it in Github actions
+4. Add Cucumber HTML report
+5. Implement step 'I fill random customer data' with help of faker library and custom command
+6. Add example of Page Object Pattern if there is some extra time
+7. Add at least some JSDoc documentation somewhere
+8. Introduce code-style check
+9. Fix the issue with purging videos folder - .gitignore file is deleted every run
 
 ## How did it go?
 It was fun after all and good to write and automate such simple scenarios again.
